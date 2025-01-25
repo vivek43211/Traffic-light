@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    height: 100vh;
+    margin-left: 500px;
+
+}
+.conatiner{
+
+    height: 300px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.boxred{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: red;
+    transition: background-color 0.9s;
+    animation: blinkred  9s infinite;
+}
+.boxgreen{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: green;
+    animation: blinkrgreen 9s infinite 6s;
+}
+.boxyellow{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: yellow;
+    animation: blinkyellow  9s infinite 3s;
+}
+@keyframes blinkred {
+    0%,
+    49%{
+        background-color: red;
+
+    }
+    50%,
+    100%{
+        background-color: black;
+    }
+    
+}
+@keyframes blinkyellow{
+    0%,
+    49%{
+        background-color:yellow;
+
+    }
+    50%,
+    100%{
+        background-color: black;
+    }
+    
+}
+@keyframes blinkgreeen{
+    0%,
+    49%{
+        background-color: green;
+
+    }
+    50%,
+    100%{
+        background-color: black;
+    }
+    
+}
